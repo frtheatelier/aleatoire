@@ -38,6 +38,27 @@ function modNumString(numstring, val, nums, operations) {
         numstring = numstring.slice(0, numstring.length-1);
         $(".calculator .input input").val(numstring);
 
+    } else if (val == '=') {
+
+        nums.push(numstring);
+        runOperations(nums, operations);
+
+    }
+}
+
+function runOperations(nums, operations) {
+
+}
+
+function codeToOp(keycode) {
+    if (keycode == 43) {
+        return '+';
+    } else if (keycode == 45) {
+        return '-';
+    } else if (keycode == 42) {
+        return '*';
+    } else if (keycode == 47) {
+        return '/';
     }
 }
 
@@ -48,10 +69,17 @@ $(document).ready(function(){
 
     $(".calc-button").click(function(){
         // $(this).hide();
-        var numstring = $(".calculator .input input").val()
+        var numstring = $(".calculator .input input").val();
         var val = $(this).text();
 
-        modNumString(numstring, val, nums, operations)
+        modNumString(numstring, val, nums, operations);
+    });
+
+    $(".calculator .input input").keypress(function(e){
+        var numstring = $(".calculator .input input").val();
+        var val = codeToOp(e.keyCode)
+
+        modNumString(numstring, val, nums, operations);
     });
 
 });

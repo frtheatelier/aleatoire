@@ -11,6 +11,8 @@
     --button-background: rgb(226, 226, 226);
     --button-shadow: 2px 2px 0px;
     --button-shadow-hover: 5px 5px 0px;
+
+    --input-background: rgb(204, 204, 204);
 }
 
 body {
@@ -66,7 +68,7 @@ body {
 
 .basic-button:hover {
     filter: drop-shadow(var(--button-shadow-hover) var(--button-border));
-    scale: 1.006;
+    scale: 1.007;
 
     background-color: rgb(207, 173, 173);
 }
@@ -108,7 +110,7 @@ a.disabled, button.disabled {
     height: 45px;
 
     border: 1px solid var(--button-border);
-    background-color: var(--button-background);
+    background-color: var(--input-background);
 
     text-align: end;
 
