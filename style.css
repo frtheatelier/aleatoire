@@ -82,7 +82,9 @@ a.disabled, button.disabled {
 .calculator {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 30px;
+    grid-template-rows: 55px 30px 30px 30px 30px;
+    
+    place-content: center;
 
     gap: 10px 10px;
 
@@ -92,7 +94,7 @@ a.disabled, button.disabled {
     
     padding: 15px;
     /* height: calc(30*5 + 10*4); */
-    height: fit-content;
+    height: 225px;
     width: 450px;
 }
 
@@ -103,12 +105,14 @@ a.disabled, button.disabled {
 
 .calculator .input input {
     width: 445px;
-    height: 25px;
+    height: 45px;
 
     border: 1px solid var(--button-border);
     background-color: var(--button-background);
 
     text-align: end;
+
+    font-size: 2rem;
 }
 
 .calculator .del {
