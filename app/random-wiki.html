@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>calculator</title>
+        <title>random wikipedia article</title>
         <link rel="stylesheet" type="text/css" href="../style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="jq_random_wiki.js"></script>
@@ -12,13 +12,12 @@
         <div class="center-page width-500px height-max-content">
             <h1 class="header">Get a random wikipedia article</h1>
             <form role="form">
-                <label># of articles</label>
-                <input type="number" value="1" class="basic-input">
-                <input type="submit" class="basic-button">
+                <label for="num"># of articles</label>
+                <input type="number" id="num" value="1" class="basic-input">
+                <input type="submit" class="basic-button" value="Submit">
             </form>
-            <div class="basic-button margin-top-15px transition-eio">
-                <h3 class="header">TITLE</h3>
-                <p>subtitle</p>
+            <div id="articles">
+
             </div>
         </div>
     </body>
