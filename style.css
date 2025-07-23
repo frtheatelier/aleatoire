@@ -21,6 +21,10 @@ body {
     font-family: var(--font-body);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* TRANSITIONS */
 /* --------------------------------------------------------------------------------------------- */
 
@@ -130,6 +134,14 @@ a.disabled, button.disabled {
     height: 60px; /* a bit annoying tbh */
 }
 
+/* RANDOM WIKI */
+/* --------------------------------------------------------------------------------------------- */
+
+.article-page p {
+    margin-bottom: 15px;
+    padding: 2px;
+}
+
 /* HEADER */
 /* --------------------------------------------------------------------------------------------- */
 
@@ -224,4 +236,15 @@ a.disabled, button.disabled {
 
 .margin-top-15px {
     margin-top: 15px;
+}
+
+/* ALIGN */
+/* --------------------------------------------------------------------------------------------- */
+
+.text-align-center {
+    text-align: center;
+}
+
+.justify-items-center {
+    justify-items: center;
 }

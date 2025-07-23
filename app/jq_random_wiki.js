@@ -11,6 +11,19 @@ function getArticle(data) {
     return [p[item].title, p[item].extract];
 }
 
+function showArticles(data) {
+    var article_data = getArticle(data);
+    var clean_title = article_data[0].replace(/ /g, "_"); // replace whitespace in title with underscore
+
+    var statement = "<a href='https://en.wikipedia.org/wiki/" + clean_title + "'>"
+        + "<div class='article-page basic-button margin-top-15px transition-eio width-500px'>"
+        + "<h3 class='header'>" + article_data[0] + "</h3>"
+        + "<p>" + article_data[1] + "</p>"
+        + "</div></a>" ;
+
+    $("#articles").append(statement);
+}
+
 $(document).ready(function(){
 
     $('form').submit(function(e) {
@@ -28,9 +41,10 @@ $(document).ready(function(){
 
         for (let index = 0; index < n; index++) {
             $.ajax({
-                url: "https://en.wikipedia.org/w/api.php?origin=*&format=json&action=query&generator=random&grnnamespace=0&prop=info|extracts|images&rvprop=content",
+                url: "https://en.wikipedia.org/w/api.php?origin=*&format=json&action=query&generator=random&grnnamespace=0&prop=info|extracts|images&exchars=100&exlimit=max&explaintext=true&exintro=true&rvprop=content",
                 success: function(data) {
-                    console.log(getArticle(data));
+                    // console.log(getArticle(data));
+                    showArticles(data)
                 },
                 error: function(xhr, error) {
                     console.log(xhr);
