@@ -5,16 +5,20 @@
         <title>calculator</title>
         <link rel="stylesheet" type="text/css" href="../style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="jq_calculator.js"></script>
+        <script src="jq_random_wiki.js"></script>
     </head>
 
     <body>
         <div class="center-page width-500px height-max-content">
             <h1 class="header">Get a random wikipedia article</h1>
-            <input type="number" value="1">
-            <input type="submit">
-            <div class="basic-button margin-top-15px">
+            <form role="form">
+                <label># of articles</label>
+                <input type="number" value="1" class="basic-input">
+                <input type="submit" class="basic-button">
+            </form>
+            <div class="basic-button margin-top-15px transition-eio">
                 <h3 class="header">TITLE</h3>
+                <p>subtitle</p>
             </div>
         </div>
     </body>

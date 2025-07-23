@@ -78,6 +78,17 @@ a.disabled, button.disabled {
     color: var(--button-background);
 }
 
+/* INPUT */
+/* --------------------------------------------------------------------------------------------- */
+
+.basic-input {
+    border: 1px solid var(--button-border);
+    background-color: var(--input-background);
+
+    font-size: 0.8rem;
+    padding: 3px;
+}
+
 /* CALCULATOR */
 /* --------------------------------------------------------------------------------------------- */
 
@@ -108,9 +119,6 @@ a.disabled, button.disabled {
 .calculator .input input {
     width: 445px;
     height: 45px;
-
-    border: 1px solid var(--button-border);
-    background-color: var(--input-background);
 
     text-align: end;
 
