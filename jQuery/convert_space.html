@@ -5,21 +5,22 @@
         <title>random wikipedia article</title>
         <link rel="stylesheet" type="text/css" href="../style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="jq_random_wiki.js"></script>
+        <script src="js_convert_space.js"></script>
     </head>
 
     <body>
-        <div class="width-full text-align-center margin-top-15px justify-items-center">
-            <h1 class="header">Enter text and see what happens</h1>
+        <div class="width-full margin-top-15px justify-items-center">
+            <h1 class="header">Convert line break</h1>
             <form role="form">
-                <textarea id="basictext" name="basictext" rows="4" cols="50">
-                    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-                </textarea>
-                <input type="submit" class="basic-button" value="Submit">
+                <textarea id="basictext" name="basictext" rows="4" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+                <br><input type="submit" class="basic-button" value="Submit">
             </form>
-            <div id="convertedtext">
+            <h3>Converted text</h3>
+            <div id="convertedtext" class="width-500px display-code"></div>
+            <!-- <button onclick="copyText()">Copy text</button> -->
 
-            </div>
+            <h3>Displayed text</h3>
+            <div id="displaytext" class="width-500px height-250px display-box"></div>
         </div>
     </body>
 </html>

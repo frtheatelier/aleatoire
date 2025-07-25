@@ -142,6 +142,24 @@ a.disabled, button.disabled {
     padding: 2px;
 }
 
+/* CONVERT SPACE */
+/* --------------------------------------------------------------------------------------------- */
+
+.display-box {
+    padding: 7px;
+    overflow-y: auto;
+    border: 1px solid var(--button-border);
+    background-color: var(--button-background);
+}
+
+.display-code {
+    padding: 7px;
+    overflow-x: auto;
+    border: 1px solid var(--button-border);
+    background-color: var(--button-background);
+    border-radius: 5px;
+}
+
 /* HEADER */
 /* --------------------------------------------------------------------------------------------- */
 
@@ -187,6 +205,10 @@ a.disabled, button.disabled {
 
 .height-500px {
     height: 500px;
+}
+
+.height-250px {
+    height: 250px;
 }
 
 .height-100 {
