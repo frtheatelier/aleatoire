@@ -11,5 +11,8 @@ Basic calculator app that only does basic operations without caring for Order of
 ### [Random Wikipedia Article Generator](jQuery/random-wiki.html)
 Generates `n` number of random wikipedia articles (`n` is capped at 15 for now). used `jQuery` and `ajax`. links are generated one at a time making it a bit slow but it works.
 
+### [Removing Line Breaks](jQuery/convert_space.html)
+Converts all line breaks into `<br>`. Will eventually try to do more but for now that's kind of the purpose.
+
 ## Notice
 Opening the page will show 2 extra links that lead to other projects. This is (admittedly) a temporary solution given glitch.me stopped hosting sites so for now, we're going with this. I have labeled which links lead to glitch projects
