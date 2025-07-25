@@ -1,4 +1,4 @@
-# aleatoire
+# aléatoire
 > *meaning 'random' in French
 
 ## Purpose
