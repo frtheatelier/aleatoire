@@ -37,7 +37,7 @@ $(document).ready(function(){
         $('#displaytext').html('');
         $('#convertedtext').html('');
 
-        // get number of articles to generate
+        // get text to convert
         var $input = $(e.target).find('textarea');
         var txt = $input.val();
 
