@@ -1,0 +1,31 @@
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+	<!-- Vue.js -->
+	<!-- development version, includes helpful console warnings -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+	<title>Convert to ???</title>
+</head>
+<body>
+	<div id="app" class="width-full margin-top-15px justify-items-center">
+        <h1 class="header">Convert line break</h1>
+        <div>
+            <textarea id="basictext" name="basictext" rows="4" cols="50" v-model="input"></textarea>
+            <br><input type="submit" class="basic-button" value="Submit" @click="convertText">
+        </div>
+        <h3>Converted text</h3>
+        <div id="convertedtext" class="width-500px display-code" v-show="display">{{convertedText}}</div>
+        <!-- <button onclick="copyText()">Copy text</button> -->
+    </div>
+
+	<!-- vue.js src -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+	<script src="v_faux_lang.js"></script>
+</body>
+</html>
