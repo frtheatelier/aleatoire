@@ -26,7 +26,13 @@ const convData = {
     "w": "~-",
     "x": "~=",
     "y": "~≡",
-    "z": "/≡"
+    "z": "/≡",
+    "0": "□",
+    "1": "[-]",
+    "2": "[=]",
+    "3": "[≡]",
+    "4": "[≣]",
+    "5": "[⊡]"
 }
 
 var conv = new Vue({
@@ -53,9 +59,8 @@ var conv = new Vue({
 
             var tmp = chr.toString()
             console.log("tmp: ", tmp)
-            console.log("tmp rmv: ", tmp.replaceAll(',', ''))
 
-            this.convertedText = tmp.replaceAll(',', '')
+            this.convertedText = tmp.replaceAll(',', '').replaceAll('][', '')
             this.display = true
         }
     }
