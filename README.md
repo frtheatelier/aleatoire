@@ -16,3 +16,6 @@ Converts all line breaks into `<br>`. Will eventually try to do more but for now
 
 ## Notice
 Opening the page will show 2 extra links that lead to other projects. This is (admittedly) a temporary solution given glitch.me stopped hosting sites so for now, we're going with this. I have labeled which links lead to glitch projects
+
+- [Caesar's Cipher](https://github.com/frtheatelier/caesar-27): Using Caesar's Cipher and perhaps some pattern recognition, try to uncover the original message by shifting letters
+- [Perfect n](https://github.com/frtheatelier/perfect-n): Checks whether a number is a perfect number. It also displays the factors of the number entered.
